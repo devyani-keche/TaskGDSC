@@ -1,0 +1,93 @@
+/* General container styling */
+.permissions-container {
+  background-color: bisque;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 20px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Title styling */
+.permissions-title {
+  text-align: center;
+  color: black;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/* Box styling */
+.permissions-box {
+  background-color: white;
+  border: 1px solid bisque;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px 0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Box hover effect */
+.permissions-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Subtitle styling */
+.permissions-subtitle {
+  color: black;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  border-bottom: 2px solid bisque;
+  padding-bottom: 5px;
+}
+
+/* List styling */
+.permissions-list {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0; /* Remove padding */
+}
+
+/* List item styling */
+.permissions-list li {
+  background-color: rgba(255, 228, 196, 0.5); /* Light bisque background */
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 15px 20px;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+/* List item hover effect */
+.permissions-list li:hover {
+  background-color: rgba(255, 228, 196, 0.7); /* Darker on hover */
+}
+
+/* Custom bullet styling */
+.permissions-list li::before {
+  content: "✓"; /* Unique bullet character */
+  color: bisque;
+  font-weight: bold;
+  position: absolute;
+  left: 10px; /* Position of the bullet */
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .permissions-title {
+    font-size: 2em;
+  }
+
+  .permissions-subtitle {
+    font-size: 1.5em;
+  }
+
+  .permissions-box {
+    padding: 15px;
+  }
+
+  .permissions-list li {
+    padding: 10px 15px; /* Adjust padding on smaller screens */
+  }
+}

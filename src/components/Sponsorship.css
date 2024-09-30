@@ -1,0 +1,108 @@
+/* General container styling */
+.factors-container {
+  background-color: bisque;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 20px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Title styling */
+.factors-title {
+  text-align: center;
+  color: black;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Paragraph styling */
+.factors-container p {
+  color: black;
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Sponsorship factors styling */
+.sponsorship-factors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Sponsor box styling */
+.sponsor-box {
+  background-color: white;
+  border: 1px solid bisque;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  flex: 1 1 45%; /* Responsive box sizes */
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Sponsor box hover effect */
+.sponsor-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Subtitle styling */
+.factors-subtitle {
+  color: black;
+  font-size: 1.8em;
+  margin: 20px 0 10px;
+  border-bottom: 2px solid bisque;
+  padding-bottom: 5px;
+}
+
+/* Box styling for proposal */
+.factors-box {
+  background-color: white;
+  border: 1px solid bisque;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+/* List styling */
+.factors-box ol {
+  padding-left: 20px;
+  color: black;
+}
+
+/* List item styling */
+.factors-box li {
+  margin-bottom: 10px;
+}
+
+/* Image styling */
+.box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .factors-title {
+    font-size: 2em;
+  }
+
+  .factors-subtitle {
+    font-size: 1.5em;
+  }
+
+  .sponsor-box {
+    flex: 1 1 100%; /* Full width on smaller screens */
+  }
+}

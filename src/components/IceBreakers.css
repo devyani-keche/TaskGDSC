@@ -1,0 +1,93 @@
+/* General container styling */
+.icebreakers-container {
+  background-color: bisque;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 20px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Title styling */
+.icebreakers-title {
+  text-align: center;
+  color: black;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Paragraph styling */
+.icebreakers-container p {
+  color: black;
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Ice-breakers list styling */
+.icebreakers-list {
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.icebreakers-list li {
+  background-color: white;
+  border: 1px solid bisque;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  color: black;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icebreakers-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Event timeline table styling */
+.timeline-title {
+  font-size: 1.8em;
+  color: black;
+  margin: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+}
+
+.event-timeline-horizontal {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.event-timeline-horizontal th {
+  background-color: bisque;
+  padding: 10px;
+  border: 1px solid black;
+  color: black;
+  text-transform: uppercase;
+}
+
+.event-timeline-horizontal td {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+  color: black;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .icebreakers-title {
+    font-size: 2em;
+  }
+
+  .event-timeline-horizontal th,
+  .event-timeline-horizontal td {
+    font-size: 0.9em;
+  }
+}

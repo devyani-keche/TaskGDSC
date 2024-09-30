@@ -1,0 +1,80 @@
+.promotion-container {
+    background-color: bisque;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 40px auto;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.promotion-description {
+    text-align: center;
+    font-size: 1.2em;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.slick-slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.slider-item {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.infoText {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 2em;
+    }
+
+    .slick-slider {
+        flex-direction: column;
+    }
+
+    .slider-item {
+        width: 100%;
+    }
+}
+
+.expo-message-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+    color: black;
+}
