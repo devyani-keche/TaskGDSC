@@ -28,7 +28,7 @@ const Permissions = () => {
       <div className="permissions-box">
         <h3 className="permissions-subtitle">Applications</h3>
         <img 
-              src="/Principal.png"  
+              src="/principal.png"  
               alt='pri'
             />
         <img 
